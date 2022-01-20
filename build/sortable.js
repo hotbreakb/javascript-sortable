@@ -16,8 +16,6 @@ containers.forEach(container => {
         const mouseEvent = event;
         const { closestElement, closestOffset } = getClosestElement(container, mouseEvent.clientY);
         const draggable = document.querySelector('.dragging');
-        console.log(closestElement);
-        // console.log(closestElement, closestOffset);
         if (draggable != null) {
             if (closestOffset === Number.NEGATIVE_INFINITY) {
                 container.appendChild(draggable);
@@ -28,6 +26,7 @@ containers.forEach(container => {
         }
     });
 });
+// (4)
 let getClosestElement = (container, clientY) => {
     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging')];
     let closestOffset = Number.NEGATIVE_INFINITY;
@@ -35,7 +34,6 @@ let getClosestElement = (container, clientY) => {
         closestElement: draggableElements.reduce((closest, child) => {
             const box = child.getBoundingClientRect();
             const offset = clientY - box.top - box.height / 2;
-            // console.log(child, offset);
             // 가장 가까운 요소를 찾아서 갱신
             if (offset < 0 && offset > closestOffset) {
                 closestOffset = offset;
