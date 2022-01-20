@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80vw;
+  background-color: #22577a;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: #fef1e6;
+  border: 3px solid #f9d5a7;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: move;
+}
+
+.draggable:hover {
+  background-color: #f9d5a7;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
