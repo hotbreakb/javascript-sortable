@@ -18,6 +18,8 @@ jQuery를 사용하지 않고 sortable 구현하기.
 
 2. [ts](./src/sortable.ts)에서 선택한 dragabble은 반투명하게 수정한다.
    addEventListener의 [type](https://developer.mozilla.org/ko/docs/Web/Events)에는 'click'만 있는 것이 아니다. 'dragstart'와 'dragend'도 있다. 드래그가 시작되었을 때 반투명하게 만들고, 끝났을 때는 원래대로 투명하게 바꿔준다.
+   
+<img src="https://user-images.githubusercontent.com/64337152/150277221-e290eaed-25cd-4385-98be-d5c9538b24ba.gif" width=400>
 
 - [Youtube](https://www.youtube.com/watch?v=jfYWwQrtzzY)
 - [Codepen 1](https://codepen.io/WebDevSimplified/pen/JjdveeV?ref=morioh.com&utm_source=morioh.com)
