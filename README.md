@@ -26,6 +26,8 @@ jQuery를 사용하지 않고 sortable 구현하기.
 
    <img src="https://user-images.githubusercontent.com/64337152/150278648-bae0e0d0-2b47-4f01-a419-222ba164fc73.gif" width=400>
 
+4. 현재는 요소를 선택만 해도 위치가 바뀐다는 것이다. 가장 가깝게 위치한 요소 바로 위에 위치해야 한다.
+
 - [Youtube](https://www.youtube.com/watch?v=jfYWwQrtzzY)
 - [Codepen 1](https://codepen.io/WebDevSimplified/pen/JjdveeV?ref=morioh.com&utm_source=morioh.com)
 - [Codepen 2](https://codepen.io/vtno/pen/MXmpoy?editors=1111)
