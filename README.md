@@ -28,6 +28,10 @@ jQuery를 사용하지 않고 sortable 구현하기.
 
 4. 현재는 요소를 선택만 해도 위치가 바뀐다는 것이다. 가장 가깝게 위치한 요소 바로 위에 위치해야 한다.
 
+   `const offset = clientY - box.top - box.height / 2;`를 쓰면 클릭한 요소으 기존 위치
+   <img width="440" alt="image" src="https://user-images.githubusercontent.com/64337152/150301679-3026ca5c-45ac-42c6-8a04-5dc901769bc4.png">
+
+
 - [Youtube](https://www.youtube.com/watch?v=jfYWwQrtzzY)
 - [Codepen 1](https://codepen.io/WebDevSimplified/pen/JjdveeV?ref=morioh.com&utm_source=morioh.com)
 - [Codepen 2](https://codepen.io/vtno/pen/MXmpoy?editors=1111)
