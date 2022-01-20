@@ -29,6 +29,8 @@ jQuery를 사용하지 않고 sortable 구현하기.
    `const offset = clientY - box.top - box.height / 2;`를 쓰면 클릭한 요소의 가운데에 마우스가 위치했을 때 0, 더 위에 있을 때 음수, 더 아래에 있을 때 양수가 나온다. 이 값을 container 안에서 dragging이 아닌(선택한 요소가 아닌) 것들을 기준으로 현재 마우스 위치와 가장 가까운 것을 찾으면 된다.
    <img width="440" alt="image" src="https://user-images.githubusercontent.com/64337152/150301679-3026ca5c-45ac-42c6-8a04-5dc901769bc4.png">
 
+5. 찾았으니 넣어보자. 위의 컨테이너에서 4의 위치에서 아래로 당기면 offset이 음수가 되지 않아 `closestOffset`이 갱신되지 않는다. 이때는 `appendChild()`로 컨테이너의 맨 끝에 넣어준다. 이게 아니면 `insertBefore()`로 가장 가까운 요소의 바로 위에 넣어주면 된다.
+
 ## javascript와 typescript의 차이
 
 - js에서 reduce()의 return값은 any이지만, typescript는 array에 들어간 요소의 타입과 같아야 한다.

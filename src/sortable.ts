@@ -19,6 +19,7 @@ containers.forEach(container => {
         const { closestElement, closestOffset } = getClosestElement(container, mouseEvent.clientY);
         const draggable = document.querySelector('.dragging');
 
+        // (5)
         if (draggable != null) {
             if (closestOffset === Number.NEGATIVE_INFINITY) {
                 container.appendChild(draggable);
