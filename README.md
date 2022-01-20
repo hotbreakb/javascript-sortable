@@ -32,7 +32,7 @@ jQuery를 사용하지 않고 sortable 구현하기.
 ## javascript와 typescript의 차이
 
 - js에서 reduce()의 return값은 any이지만, typescript는 array에 들어간 요소의 타입과 같아야 한다.
-  - `draggableElements.reduce`
+  - `draggableElements`는 `Element[]`이므로 `draggableElements.reduce`에서 리턴값은 `Element`여야 한다.
 - 그래서 reduce()로 새로 만든 object를 리턴할 수 없다.
 - js에서는 closest.offset을 object 안에서 갱신했지만, ts에서는 이게 불가능하기 때문에 `closestOffset` 변수를 새로 선언하였다.
 
